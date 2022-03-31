@@ -1,13 +1,12 @@
-module MDR(mdrInput, mdrOutput, clk, reset);
+module MDR(mdrInput, mdrOutput, clk, reset, enable);
 
 parameter WIDTH = 32;
 
 	input wire [WIDTH-1:0] mdrInput;
 	output reg [WIDTH-1:0] mdrOutput;
-	input clk, reset;
+	input clk, reset, enable;
 
 	
-assign enable = 'b1;
 
 register32 mdr(mdrInput, mdrOutput, clk, reset, enable);
 
