@@ -5,13 +5,19 @@
 //	Date:		February 4, 2022
 // ----------------------------------------------------------
 
-module xnor32(out, a, b);
+module xnor32(Result, A, B);
 
-output reg [31:0]	out;
-input 	   [31:0]	a;
-input      [31:0]	b;
+parameter WIDTH = 32;
 
+output		[WIDTH-1:0] Result;
 
-xnor xnor1 [31:0] (out, a, b);
+input		[WIDTH-1:0] A,B;
+
+genvar j;
+
+generate for (j=0; j<32; j=j+1) begin: xnor_loop
+	   xnor xn1(Result[j], A[j], B[j]);
+	end
+endgenerate
 
 endmodule
