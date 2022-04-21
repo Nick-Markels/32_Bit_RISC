@@ -15,7 +15,7 @@ input		[WIDTH-1:0] A,B;
 
 genvar j;
 
-generate for (j=0; j<32; j=j+1) begin: xnor_loop
+	generate for (j=0; j<WIDTH; j=j+1) begin: xnor_loop
 	   xnor xn1(Result[j], A[j], B[j]);
 	end
 endgenerate
