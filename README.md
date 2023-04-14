@@ -6,3 +6,12 @@ The controller was created by modeling an FSM with FSMs to control different fun
 The final microprocessor was eventually tested in simulation by creating a program to perform a factorial calculation on a given input. The program ran successfully and produced the expected output.
 
 Overall this project was an excellent experience to solidify digital design skills and learn the Verilog HDL.
+
+Overview of CPU
+![cpu model](https://user-images.githubusercontent.com/94936857/231936245-0817e197-766f-435c-8952-371e84ac1e4f.svg)
+
+Controller FSM
+![controller model](https://user-images.githubusercontent.com/94936857/231936264-cf21dc4d-3f33-403e-a837-ffafc1c1d0cb.svg)
+
+Datapath
+![data path model](https://user-images.githubusercontent.com/94936857/231936271-b38411f1-74ba-4832-9a94-0d530a396eed.svg)
